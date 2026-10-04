@@ -71,6 +71,6 @@
 .loan-data-warning{margin:10px 0;padding:8px;background:#f5e9df;color:#754c3a;font-size:8px;line-height:1.6}
 .loan-consent{display:flex;align-items:flex-start;gap:7px;color:var(--muted);font-size:8px;line-height:1.55}
 .loan-consent input{margin:2px 0 0;flex:0 0 auto;accent-color:var(--green)}
-.loan-details-form .loan-inline-cta{margin-top:10px;cursor:pointer}
+.loan-details-form .loan-submit{width:100%;margin-top:12px;font-size:10px}
 @keyframes loan-details-in{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){.loan-inline-details{animation:none}}
