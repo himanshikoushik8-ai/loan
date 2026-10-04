@@ -54,3 +54,23 @@
 @media(max-width:900px){.loan-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.loan:nth-child(2){border-right:1px solid var(--line)}.loan:nth-child(3){padding-left:18px}.loan:nth-child(4){border-top:0}.type-grid{gap:12px}.cta-banner{padding-right:7%;padding-left:7%}}
 @media(max-width:650px){.loan-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.loan{min-height:245px;padding:14px 11px}.loan:not(:first-child){padding-left:11px}.loan h3{font-size:13px}.loan p{font-size:9px}.loan:last-child{grid-column:1/-1}.type-grid{grid-template-columns:1fr}.loan-types{padding-top:59px;padding-bottom:59px}.type-card{padding:19px}.cta-banner{padding:30px 21px;align-items:flex-start;flex-direction:column}.cta-banner h2{font-size:24px}.cta-banner .button{width:100%}.inquiry-form{padding:20px 17px}}
 @media(max-width:380px){.loan{padding-right:8px;padding-left:8px}.loan:not(:first-child){padding-left:8px}.loan h3{font-size:12px}.loan p{font-size:8px}.loan-link{font-size:9px}}
+
+.loan-inline-details{margin:8px 0 12px;padding:11px 0 0;border-top:1px solid var(--line);animation:loan-details-in .2s ease-out}
+.loan-inline-row{padding:7px 0;display:grid;grid-template-columns:82px 1fr;gap:8px;font-size:9px;line-height:1.55}
+.loan-inline-row span,.loan-inline-note{color:var(--muted)}
+.loan-inline-row strong{font-weight:600}
+.loan-inline-note{margin:8px 0;font-size:8px;line-height:1.5}
+.loan-inline-cta{width:100%;padding:9px 0;border:0;border-top:1px solid var(--line);background:transparent;color:var(--green);font-size:9px;font-weight:700;text-align:left;cursor:pointer}
+.loan-inline-cta:focus-visible{outline:3px solid #d1775d;outline-offset:2px}
+.document-list{margin-top:10px;padding-top:9px;border-top:1px solid var(--line)}
+.document-list h4,.loan-details-form h4{margin:0 0 7px;font-size:10px}
+.loan-documents{margin:0;padding-left:16px;color:var(--muted);font-size:9px;line-height:1.7}
+.loan-details-form{margin-top:12px;padding-top:11px;border-top:1px solid var(--line)}
+.loan-details-form>label:not(.loan-consent){margin:8px 0;display:block;font-size:9px;font-weight:600}
+.loan-details-form input:not([type=checkbox]),.loan-details-form select{width:100%;height:34px;margin-top:4px;padding:0 8px;border:1px solid var(--line);border-radius:2px;background:#fff;color:var(--ink);font:400 10px var(--sans)}
+.loan-data-warning{margin:10px 0;padding:8px;background:#f5e9df;color:#754c3a;font-size:8px;line-height:1.6}
+.loan-consent{display:flex;align-items:flex-start;gap:7px;color:var(--muted);font-size:8px;line-height:1.55}
+.loan-consent input{margin:2px 0 0;flex:0 0 auto;accent-color:var(--green)}
+.loan-details-form .loan-inline-cta{margin-top:10px;cursor:pointer}
+@keyframes loan-details-in{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.loan-inline-details{animation:none}}

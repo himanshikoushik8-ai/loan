@@ -46,6 +46,29 @@
     <section class="about section" id="about"><div class="about-image" role="img" aria-label="Bright, calm workspace"><span>Make<br>it yours.</span></div><div><p class="eyebrow">FINANCE WITH A HUMAN SIDE</p><h2>First, we listen.<br>Then, we <em>figure it out.</em></h2><p class="muted about-text">Bade financial decisions ke liye ek real conversation zaroori hai. Hum aapki priorities samajhte hain, options ko saaf tareeke se batate hain aur informed next step lene mein madad karte hain.</p><div class="values"><p><b>01</b><span><strong>Clear from the start</strong><br>Details seedhi aur saaf zubaan mein.</span></p><p><b>02</b><span><strong>Built around your needs</strong><br>Aapke plans se shuruaat, template se nahi.</span></p></div><a class="plain-link" href="#contact">Meet us halfway ↗</a></div></section>
     <section class="cta-banner"><div><p class="eyebrow light">आपके अगले कदम के लिए</p><h2>अगर आप कम ब्याज वाले Loan की तलाश में हैं,<br><em>तो आज ही संपर्क करें!</em></h2><p>कम EMI* <span>·</span> तेज प्रोसेस* <span>·</span> 100% भरोसा</p></div><a class="button lime" href="#contact">संपर्क करें ↗</a></section>
     <section class="contact" id="contact"><div class="contact-layout"><div class="contact-copy"><p class="eyebrow light">संपर्क करें · Pankaj Singh</p><h2>आपकी जरूरत...<br><em>हमारे साथ...</em></h2><p>अपनी जरूरत बताएं। हम उपलब्ध विकल्पों की जानकारी साझा करेंगे।</p><div class="contact-list"><a href="tel:+919785208658"><small>फोन</small>+91 97852 08658 ↗</a><a href="mailto:Pschauhan1508@gmail.com"><small>ईमेल</small>Pschauhan1508@gmail.com ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Near+KTL+Villa+Water+Park+Gaurav+Path+Road+Khairthal+301404" target="_blank" rel="noopener noreferrer"><small>लोकेशन</small>Near KTL Villa, Water Park, Gaurav Path Road, Khairthal, Rajasthan 301404 ↗</a></div></div><form id="inquiry"><div class="form-title"><span>01</span> अपनी जानकारी दें</div><label for="name">आपका नाम</label><input id="name" name="name" placeholder="नाम" autocomplete="name" required><label for="phone">फोन नंबर</label><input id="phone" name="phone" type="tel" placeholder="10 अंकों का मोबाइल नंबर" autocomplete="tel" inputmode="tel" pattern="[0-9+() -]{10,16}" required><label for="loan-type">किस लोन के बारे में जानना है?</label><select id="loan-type" name="loan" required><option value="" disabled selected>लोन का प्रकार चुनें</option><option>Personal Loan</option><option>Home Loan</option><option>Loan Against Property (LAP)</option><option>Business Loan</option><option>Vehicle Loan</option><option>Education Loan</option><option>Gold Loan</option><option>Agriculture / Kisan Loan</option><option>Microfinance / Small Loan</option><option>Credit Card Loan</option></select><button class="button lime" type="submit">WhatsApp पर पूछें ↗</button><p id="status" aria-live="polite">आपका WhatsApp खुलेगा। भेजने से पहले संदेश देख सकते हैं।</p></form></div></section>
+    <template id="loan-details-template">
+      <div class="loan-inline-details">
+        <div class="loan-inline-row"><span>ब्याज दर</span><strong>Lender के offer और eligibility के अनुसार</strong></div>
+        <div class="loan-inline-row"><span>EMI और अवधि</span><strong>राशि, अवधि और lender की शर्तों के अनुसार</strong></div>
+        <div class="loan-inline-row"><span>मंजूरी</span><strong>दस्तावेज और lender की जांच के बाद</strong></div>
+        <div class="document-list"><h4>आमतौर पर मांगे जाने वाले दस्तावेज</h4><ul class="loan-documents"></ul></div>
+        <p class="loan-inline-note">यह शुरुआती checklist है; lender, योजना और आपकी स्थिति के अनुसार दस्तावेज बदल सकते हैं।</p>
+        <p class="loan-inline-note">अंतिम rate, शुल्क और मंजूरी lender के लिखित offer से confirm होंगे।</p>
+        <form class="loan-details-form">
+          <h4>अपनी जानकारी दें</h4>
+          <label>पूरा नाम<input name="name" autocomplete="name" required placeholder="आपका नाम"></label>
+          <label>मोबाइल नंबर<input name="phone" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9+() -]{10,16}" required placeholder="10 अंकों का मोबाइल नंबर"></label>
+          <label>कितने रुपये का लोन चाहिए?<input name="amount" type="number" min="10000" step="10000" required placeholder="जैसे 500000"></label>
+          <label>कितने साल के लिए लोन चाहिए?<input name="tenure" type="number" min="1" max="30" step="1" required placeholder="जैसे 5 साल"></label>
+          <label>शहर (वैकल्पिक)<input name="city" autocomplete="address-level2" placeholder="आपका शहर"></label>
+          <label>काम का प्रकार (वैकल्पिक)<select name="work"><option value="">चुनें</option><option>नौकरी</option><option>अपना व्यवसाय</option><option>खेती</option><option>अन्य</option></select></label>
+          <label>मासिक आय (वैकल्पिक)<select name="income"><option value="">चुनें</option><option>₹25,000 से कम</option><option>₹25,000–₹50,000</option><option>₹50,000–₹1,00,000</option><option>₹1,00,000 से अधिक</option></select></label>
+          <p class="loan-data-warning">यहां PAN/Aadhaar नंबर, OTP, बैंक विवरण या दस्तावेज़ अपलोड न करें। जरूरी दस्तावेज़ केवल lender के verified secure channel पर दें।</p>
+          <label class="loan-consent"><input name="consent" type="checkbox" required><span>मैं सहमत हूं कि मेरी दी गई जानकारी Vihan Fincrop को WhatsApp enquiry में भेजी जाए। भेजने से पहले मैं संदेश देख सकूंगा।</span></label>
+          <button class="loan-inline-cta" type="submit">WhatsApp पर enquiry भेजें ↗</button>
+        </form>
+      </div>
+    </template>
   </main>
   <footer><a class="brand footer-brand" href="#home"><span class="mark">V</span> vihan<span class="brand-light">fincrop</span></a><span>आपका भरोसा ही हमारी पहचान है...</span><small>© <span id="year">2026</span> Vihan Fincrop</small></footer>
 </body>
